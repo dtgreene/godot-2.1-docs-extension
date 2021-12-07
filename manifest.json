@@ -1,0 +1,19 @@
+{
+  "name": "Dark Godot 2.1 Docs",
+  "description": "Dark styles for Godot Engine 2.1 Documentation",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://docs.godotengine.org/en/2.1/*"],
+      "js" : ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["https://docs.godotengine.org/*"]
+    }
+  ]
+}
